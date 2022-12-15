@@ -1,6 +1,116 @@
+@font-face {
+    font-family: Anton;
+    src: url(assets/fonts/Anton-Regular.ttf);
+    font-weight: 100;
+}
+h1 {font-family: "DiplomataSC";}
+
+@font-face {
+    font-family: Merriweather-Bold;
+    src: url("assets/fonts/Merriweather-Bold.ttf");
+    font-weight: 100;
+}
+h2 {font-family: "Merriweather-Bold";}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    background-color: beige;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+    
+.nav-link {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link:hover {
+    color: brown;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .avatar {
-    width: 160px;
-    height: 160px;
-    background: url(./avatar.png);
-    background-size: cover;
+    width: 150px;
+    height: 180px;
+}
+
+.box1 {
+    background: none;
+    width: 650px;
+    border: 2px solid rgba(163, 151, 151, 0.656);
+    background-color: rgb(247, 238, 230);
+}
+
+@media (max-width:768px){
+.box2 {
+    flex-wrap: wrap;
+    width: 95%;
+}
+}
+
+.main {
+    margin-left: 10px;
+}
+
+.block {
+    width: 600px;
+    height: 150px;
+    background-color: bisque;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    height: 80px;
+    background-color: rgb(247, 244, 221);
+}
+
+.footerContainer {
+    max-width: 1440px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.footerGit {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;  
+}
+
+.rss {
+    width: 140px;
+    height: 50px;   
 }
