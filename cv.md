@@ -12,7 +12,8 @@ I'm 25 years old. In 2020 graduated from BNTU (studied managment and design). At
 * AutoCAD
 * Autodesk 3ds Max (Basic)
 ### **Code Example:**
-```var countBits = function(n) {
+```
+var countBits = function(n) {
                   const base = (n).toString(2).split('');
                   const result = base.reduce((sum, num) => sum + Number(num), 0);
                   return result;
